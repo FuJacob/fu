@@ -1,18 +1,41 @@
+import {
+  FaHome,
+  FaUser,
+  FaBriefcase,
+  FaDesktop,
+  FaPaperPlane,
+  FaEnvelope,
+} from "react-icons/fa";
 const Page = ({
   title = "Home",
   tagline = "Welcome and quick introduction",
+  type = "home",
 }) => {
   return (
-    <div className="flex flex-row">
-      <div className="w-1/5">
-        <a href="" className="flex bg-red-600 w-12 h-12 p-2 rounded-full" />
+    <div className="flex flex-row p-3 hover:bg-iblue text-txt hover:text-txtlight rounded-xl">
+      <div className="w-1/5 mr-2">
+        <div className="flex justify-center items-center rounded-full bg-lsecondary w-12 h-12">
+          {type == "home" ? (
+            <FaHome size={30} color="white" />
+          ) : type == "about" ? (
+            <FaUser size={30} color="white" />
+          ) : type == "exp" ? (
+            <FaBriefcase size={30} color="white" />
+          ) : type == "blog" ? (
+            <FaPaperPlane size={30} color="white" />
+          ) : type == "projects" ? (
+            <FaDesktop size={30} color="white" />
+          ) : type == "contact" ? (
+            <FaEnvelope size={30} color="white" />
+          ) : null}
+        </div>
       </div>
 
-      <div className="flex flex-col text-txt w-4/5 border-b-2 border-lsecondary h-16 gap-1">
+      <div className="flex flex-col w-4/5 border-b-2 border-lsecondary h-16 gap-1">
         <div className="flex w-full justify-between text-sm">
-          <h1 className="font-bold text-white ">{title}</h1> <h2>21:56</h2>
+          <h1 className="font-bold text-white">{title}</h1> <h2>21:56</h2>
         </div>
-        <p className="text-xs">{tagline}</p>
+        <p className="text-start text-xs">{tagline}</p>
       </div>
     </div>
   );

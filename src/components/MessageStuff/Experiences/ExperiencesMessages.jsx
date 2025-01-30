@@ -5,10 +5,10 @@ import experiences from "../../../data/experience";
 
 const ExperiencesMessages = () => {
   return (
-    <div className="text-white p-4 flex flex-col justify-start gap-3 w-full flex-grow overflow-y-auto">
+    <div className="text-white p-4 flex flex-col justify-start gap-2 w-full flex-grow overflow-y-auto">
       <h1>iMessage</h1>
-      <BlueMessage message="Hi! My name is Jacob, I'm so excited for this interview." />
-      <GrayMessage message="Hey Jacob, nice to meet you too! My name is Hiring Manager, and I'll be interviewing you today." />
+      <GrayMessage message="Hi! My name is Jacob, I'm so excited for this interview." />
+      <BlueMessage message="Hey Jacob, nice to meet you too! My name is Hiring Manager, and I'll be interviewing you today." />
 
       {/* <GrayMessage message="So let's get started! Can you tell me about time at PetMap?" />
 
