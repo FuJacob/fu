@@ -5,14 +5,21 @@ import Main from "./components/MessageStuff/Main";
 import Sidebar from "./components/SidebarStuff/Sidebar";
 import { AppProvider } from "./components/SidebarStuff/AppContext";
 function App() {
-  const AppContext = createContext();
   return (
     <>
-      <AppProvider className="w-full h-full">
-        <main className="flex flex-row min-h-screen">
-          <Sidebar />
-          <Main />
-        </main>
+      <AppProvider>
+        <div
+          className="min-h-screen flex items-center justify-center"
+          style={{
+            backgroundImage: "url(/bg.jpg)",
+            backgroundSize: "cover",
+          }}
+        >
+          <main className="flex w-1/2 flex-row h-1/2 shadow-2xl">
+            <Sidebar />
+            <Main />
+          </main>
+        </div>
       </AppProvider>
     </>
   );

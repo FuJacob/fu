@@ -5,7 +5,11 @@ const Pinned = () => {
       <div className="px-3 h-12">
         <div className="bg-lsecondary text-txt rounded-lg h-8 p-2 flex gap-2 text-sm items-center">
           <FaSearch size={14} />
-          Search
+          <input
+            type="text"
+            placeholder="Search"
+            className="bg-lsecondary w-full outline-none "
+          />
         </div>
       </div>
 

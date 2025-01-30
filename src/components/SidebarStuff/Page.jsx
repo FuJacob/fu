@@ -12,7 +12,7 @@ const Page = ({
   type = "home",
 }) => {
   return (
-    <div className="flex flex-row p-3 hover:bg-iblue text-txt hover:text-txtlight rounded-xl">
+    <div className="flex flex-row p-3 hover:bg-iblue text-txt transition-all duration-400 hover:text-txtlight rounded-xl">
       <div className="w-1/5 mr-2">
         <div className="flex justify-center items-center rounded-full bg-lsecondary w-12 h-12">
           {type == "home" ? (
