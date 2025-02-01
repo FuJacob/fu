@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaSearch, FaFile } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaSearch, FaBriefcase } from "react-icons/fa";
 
 const Pinned = () => {
   return (
@@ -49,10 +49,10 @@ const Pinned = () => {
             href="/Jacob_Fu_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-center items-center bg-lsecondary w-16 h-16 p-2 rounded-full 
+            className="flex justify-center items-center bg-iblue w-16 h-16 p-2 rounded-full 
             transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-6 hover:bg-iblue"
           >
-            <FaFile size={40} color="white" />
+            <FaBriefcase size={40} color="white" />
           </a>
           <h3 className="text-xs text-txt">Resume</h3>
         </div>
