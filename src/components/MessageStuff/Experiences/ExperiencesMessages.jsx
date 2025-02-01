@@ -6,13 +6,6 @@ const ExperiencesMessages = () => {
     <>
       {experiences.map((exp, index) => (
         <GrayMessage>
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            viewport={{ once: true }}
-          >
             {/* Experience Card */}
             <div className="bg-white p-4 rounded-lg hover:scale-105 transform transition-transform duration-500">
               <h3 className="text-lg font-semibold text-gray-800">
@@ -28,7 +21,7 @@ const ExperiencesMessages = () => {
                   ))}
               </ul>
             </div>
-          </motion.div>
+
         </GrayMessage>
       ))}
     </>

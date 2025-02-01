@@ -5,7 +5,7 @@ const Pinned = () => {
     <section className="h-36">
       {/* Search Bar */}
       <div className="px-3 h-12">
-        <div className="bg-lsecondary text-txt rounded-lg h-8 p-2 flex gap-2 text-sm items-center">
+        <div className="bg-lsecondary text-txt rounded-lg h-8 p-1 md:p-2 flex gap-2 text-sm items-center">
           <FaSearch size={14} />
           <input
             type="text"
@@ -22,7 +22,7 @@ const Pinned = () => {
           <a
             href="https://github.com/fujacob"
             target="_blank"
-            className="flex justify-center items-center bg-lsecondary w-16 h-16 p-2 rounded-full 
+            className="flex justify-center items-center bg-lsecondary w-12 md:w-16 h-16 p-1 md:p-2 rounded-full 
             transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-6 hover:bg-iblue"
           >
             <FaGithub size={40} color="white" />
@@ -35,7 +35,7 @@ const Pinned = () => {
           <a
             href="https://www.linkedin.com/in/fujacob"
             target="_blank"
-            className="flex justify-center items-center bg-lsecondary w-16 h-16 p-2 rounded-full 
+            className="flex justify-center items-center bg-lsecondary w-12 md:w-16 h-16 p-1 md:p-2 rounded-full 
             transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-6 hover:bg-iblue"
           >
             <FaLinkedin size={40} color="white" />
@@ -49,7 +49,7 @@ const Pinned = () => {
             href="/Jacob_Fu_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-center items-center bg-iblue w-16 h-16 p-2 rounded-full 
+            className="flex justify-center items-center bg-iblue w-12 md:w-16 h-16 p-1 md:p-2 rounded-full 
             transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-6 hover:bg-iblue"
           >
             <FaBriefcase size={40} color="white" />
