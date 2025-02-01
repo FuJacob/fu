@@ -9,31 +9,29 @@ const ProjectsMessages = () => {
       {projects.map((project, index) => (
         <>
           {/* Project Image */}
-          <GrayMessage key={index} className="">
-            <img
-              src={project.imgUrl}
-              alt={project.title}
-              className="object-cover w-96 h-64 rounded-lg shadow-md mt-2 border border-gray-300"
-            />
-          </GrayMessage>
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            {" "}
+            <GrayMessage key={index} className="">
+              <img
+                src={project.imgUrl}
+                alt={project.title}
+                className="object-cover w-96 h-64 rounded-lg shadow-md mt-2 border border-gray-300 hover:scale-105 
+                hover:opacity-60 transform transition-transform duration-500"
+              />
+            </GrayMessage>
+          </a>
 
           {/* Project Description */}
           <GrayMessage>
             <p>
               <strong>{project.title}</strong>: {project.des}{" "}
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-              >
-                (View Project)
-              </a>
             </p>
           </GrayMessage>
-
-          {/* Technologies Used */}
-          <GrayMessage message={`Technologies: ${project.stack.join(", ")}`} />
         </>
       ))}
     </>
