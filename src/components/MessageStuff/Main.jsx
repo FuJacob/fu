@@ -20,7 +20,7 @@ const Main = () => {
           <h1 className="text-white">Jacob Fu</h1>
         </div>
       </div>
-      <div className="text-white p-4 flex flex-col justify-start gap-2 w-full h-96 overflow-y-auto bg-primary">
+      <div className="text-white p-4 flex flex-col justify-start gap-2 w-full h-96 grow overflow-y-auto bg-primary">
         <h1 className="text-xs text-txt text-center">iMessage</h1>
 
         {pageOpen == "home" ? (
