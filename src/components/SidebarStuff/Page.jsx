@@ -31,7 +31,7 @@ const Page = ({
         </div>
       </div>
 
-      <div className="flex flex-col w-4/5 border-b-2 border-lsecondary h-16 gap-1">
+      <div className="flex flex-col w-4/5 h-16 gap-1">
         <div className="flex w-full justify-between text-sm">
           <h1 className="font-bold text-white">{title}</h1> <h2>21:56</h2>
         </div>

@@ -15,7 +15,7 @@ function App() {
             backgroundSize: "cover",
           }}
         >
-          <main className="flex w-1/2 flex-row h-1/2 shadow-2xl">
+          <main className="flex w-1/2 flex-row h-full shadow-2xl">
             <Sidebar />
             <Main />
           </main>

@@ -1,14 +1,11 @@
 import GrayMessage from "../GrayMessage";
 import BlueMessage from "../BlueMessage";
-const Home = ({ exp }) => {
+const Experience = ({ exp }) => {
   return (
     <>
       <h1 className="text-xs text-center text-txt">
-        {exp.startDate} - {exp.endDate}
-          </h1>
-          <h1 className="text-9xl">hello</h1>
-      <BlueMessage message={exp.intro} />
-
+        {exp.Date}
+      </h1>
       {exp.me.map((point, index) => (
         <GrayMessage message={point} />
       ))}
@@ -17,4 +14,4 @@ const Home = ({ exp }) => {
     </>
   );
 };
-export default Home;
+export default Experience;

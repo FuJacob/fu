@@ -1,7 +1,6 @@
 import GrayMessage from "../GrayMessage";
 import BlueMessage from "../BlueMessage";
-import Experience from "../Experiences/Experience";
-import experiences from "../../../data/experience";
+import MessageBar from "../MessageBar";
 
 const HomeMessages = () => {
   return (
@@ -17,7 +16,6 @@ const HomeMessages = () => {
         <GrayMessage message="Or contact me directly at jacob.fu@uwaterloo.ca" />
         <GrayMessage message="Have a nice day" />
         <GrayMessage message="~ J." />
-  
     </>
   );
 };
