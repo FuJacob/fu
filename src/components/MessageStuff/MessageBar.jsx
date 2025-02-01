@@ -2,7 +2,7 @@ import { FaGrin, FaPlus } from "react-icons/fa";
 
 const MessageBar = () => {
   return (
-    <div className="bg-primary relative right-0 bottom-1 z-50 flex gap-4 w-full h-12 p-6 justify-center items-center rounded-br-2xl">
+    <div className="bg-primary relative right-0 bottom-0 z-50 flex gap-4 w-full h-12 p-6 justify-center items-center rounded-br-2xl">
       <a
         href=""
         className="flex justify-center items-center bg-lsecondary w-7 h-7 rounded-full"
