@@ -1,14 +1,24 @@
-import Page from "./Page";
-import Pinned from "./Pinned";
+import Page from "./PageMobile";
+import Pinned from "./PinnedMobile";
 import ControlButtons from "./ControlButtons";
 import { useContext, useState } from "react";
 import { AppContext } from "./AppContext";
-const Sidebar = () => {
+import { FaArrowLeft, FaSearch } from "react-icons/fa";
+const SidebarMobile = () => {
   const { setPageOpen } = useContext(AppContext);
 
   return (
-    <section className="hidden md:block h-2/3 bg-secondary/95 w-1/3 space-y-2 rounded-tl-2xl rounded-bl-2xl">
-      <ControlButtons />
+    <section className="h-screen bg-secondary/95 space-y-4 rounded-tl-2xl rounded-bl-2xl">
+      <div className="px-6 pt-8 flex justify-center items-center flex-row gap-4 h-24">
+        <FaArrowLeft size={40} />
+        {/* Search Bar */}
+          <div className="h-12 w-full bg-lsecondary text-txt rounded-lg h-12 p-2 flex gap-2 text-md items-center">
+            <FaSearch size={20} />
+            <h1 className="bg-lsecondary w-full">
+              Welcome to Jacob Fu's Portfolio!
+            </h1>
+        </div>
+      </div>
 
       <Pinned />
 
@@ -50,4 +60,4 @@ const Sidebar = () => {
     </section>
   );
 };
-export default Sidebar;
+export default SidebarMobile;

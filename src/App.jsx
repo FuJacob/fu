@@ -15,8 +15,9 @@ function App() {
             backgroundSize: "cover",
           }}
         >
-          <main className="flex w-1/2 flex-row h-full shadow-2xl hover:scale-105 transform transition-transform duration-500">
-            <Sidebar />
+          <main className="flex md:w-1/2 flex-row md:h-full h-screen shadow-2xl">
+              <Sidebar />
+
             <Main />
           </main>
         </div>
