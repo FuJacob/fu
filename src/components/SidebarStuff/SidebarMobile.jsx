@@ -8,7 +8,7 @@ const SidebarMobile = () => {
   const { setPageOpen, setMenuOpen } = useContext(AppContext);
 
   return (
-    <section className="h-screen bg-secondary/95 space-y-4 rounded-tl-2xl rounded-bl-2xl">
+    <section className="h-screen bg-secondary/95 space-y-4 rounded-tl-2xl rounded-bl-2xl overflow-y-auto">
       <div className="px-6 pt-8 flex justify-center items-center flex-row gap-4 h-24">
         <button onClick={() => setMenuOpen(false)}>
           <FaArrowLeft size={40} />
@@ -25,7 +25,6 @@ const SidebarMobile = () => {
       <Pinned />
 
       {/* ALL THE PAGES */}
-      <div className="overflow-y-auto sm:h-96">
         <button onClick={() => setPageOpen("home")} className="w-full">
           <Page />
         </button>
@@ -60,7 +59,7 @@ const SidebarMobile = () => {
         <button onClick={() => setPageOpen("contact")} className="w-full mb-12">
           <Page title="Contact" tagline="Get in touch with me" type="contact" />
         </button>
-      </div>
+
     </section>
   );
 };

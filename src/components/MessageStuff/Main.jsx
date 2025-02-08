@@ -31,11 +31,11 @@ const Main = () => {
                 <SidebarMobile />
               </div>
             )}
-            <div className="flex flex-col pt-4 gap-2 justify-center items-center">
+            <div className="flex pt-2 gap-2 justify-center items-center">
               <img
                 src="avatar.png"
                 alt="avatar"
-                className="md:hidden w-16 h-16 rounded-full"
+                className="md:hidden w-12 h-12 rounded-full"
               />
               <p>
                 To:
