@@ -3,8 +3,8 @@ import { createContext, useState } from "react";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [pageOpen, setPageOpen] = useState("about");
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [pageOpen, setPageOpen] = useState("home");
+    const [menuOpen, setMenuOpen] = useState(true);
 
 
   return (
