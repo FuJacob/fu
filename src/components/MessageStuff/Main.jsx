@@ -13,7 +13,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import SidebarMobile from "../SidebarStuff/SidebarMobile";
 const Main = () => {
   const { pageOpen } = useContext(AppContext);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
 
   useEffect(() => {
     setMenuOpen(!menuOpen);
