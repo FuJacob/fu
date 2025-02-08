@@ -12,8 +12,7 @@ import ContactMessages from "./Contact/ContactMessages";
 import { FaArrowLeft } from "react-icons/fa6";
 import SidebarMobile from "../SidebarStuff/SidebarMobile";
 const Main = () => {
-  const { pageOpen } = useContext(AppContext);
-  const [menuOpen, setMenuOpen] = useState(true);
+  const { pageOpen, setMenuOpen, menuOpen } = useContext(AppContext);
 
   useEffect(() => {
     setMenuOpen(!menuOpen);

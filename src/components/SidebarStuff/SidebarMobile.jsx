@@ -5,12 +5,14 @@ import { useContext, useState } from "react";
 import { AppContext } from "./AppContext";
 import { FaArrowLeft, FaSearch } from "react-icons/fa";
 const SidebarMobile = () => {
-  const { setPageOpen } = useContext(AppContext);
+  const { setPageOpen, setMenuOpen } = useContext(AppContext);
 
   return (
     <section className="h-screen bg-secondary/95 space-y-4 rounded-tl-2xl rounded-bl-2xl">
       <div className="px-6 pt-8 flex justify-center items-center flex-row gap-4 h-24">
-        <FaArrowLeft size={40} />
+        <button onClick={() => setMenuOpen(false)}>
+          <FaArrowLeft size={40} />
+        </button>{" "}
         {/* Search Bar */}
         <div className="h-12 w-full bg-lsecondary text-txt rounded-lg h-12 p-2 flex gap-2 text-md items-center">
           <FaSearch size={20} />
