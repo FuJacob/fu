@@ -7,7 +7,7 @@ const Sidebar = () => {
   const { setPageOpen } = useContext(AppContext);
 
   return (
-    <section className="h-2/3 bg-secondary/95 w-1/3 space-y-2 rounded-tl-2xl rounded-bl-2xl">
+    <section className="md:h-2/3 h-screen bg-secondary/95 w-1/3 space-y-2 rounded-tl-2xl rounded-bl-2xl">
       <ControlButtons />
 
       <Pinned />

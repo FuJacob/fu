@@ -15,9 +15,11 @@ function App() {
             backgroundSize: "cover",
           }}
         >
-          <main className="flex w-full lg:w-1/2 flex-row h-full shadow-2xl transform transition-transform duration-500">
-            <Sidebar />
-            <Main />
+          <main className="flex w-full md:w-1/2 flex-row h-full shadow-2xl transform transition-transform duration-500">
+<span className="hidden md:block">
+              <Sidebar />
+  
+</span>            <Main />
           </main>
         </div>
       </AppProvider>
