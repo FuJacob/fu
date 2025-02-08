@@ -8,7 +8,7 @@ const SidebarMobile = () => {
   const { setPageOpen } = useContext(AppContext);
 
   return (
-    <section className="h-screen bg-secondary/95 space-y-4 rounded-tl-2xl rounded-bl-2xl">
+    <section className="h-screen bg-secondary/95 space-y-4 rounded-tl-2xl rounded-bl-2xl overflow-y-auto">
       <div className="px-6 pt-8 flex justify-center items-center flex-row gap-4 h-24">
         <FaArrowLeft size={40} />
         {/* Search Bar */}
