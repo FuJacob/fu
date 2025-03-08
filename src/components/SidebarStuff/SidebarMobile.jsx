@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import { AppContext } from "./AppContext";
 import { FaArrowLeft, FaSearch } from "react-icons/fa";
 const SidebarMobile = () => {
-  const { setPageOpen, setMenuOpen, menuOpen } = useContext(AppContext);
+  const { setPageOpen, setMenuOpen, menuOpen, pageOpen } = useContext(AppContext);
 
   return (
     <section className="h-screen bg-secondary/95 space-y-4 rounded-tl-2xl rounded-bl-2xl overflow-y-auto">
@@ -29,7 +29,7 @@ const SidebarMobile = () => {
         <Page />
       </button>
 
-      <button onClick={() => setPageOpen("about")} className="w-full">
+      <button onClick={() => setPageOpen("about")} className={`${pageOpen == "home" && "bg-iblue"} w-full`} >
         <Page
           title="About"
           tagline="Learn more about me and my journey"

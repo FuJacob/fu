@@ -4,7 +4,7 @@ import ControlButtons from "./ControlButtons";
 import { useContext, useState } from "react";
 import { AppContext } from "./AppContext";
 const Sidebar = () => {
-  const { setPageOpen } = useContext(AppContext);
+  const { setPageOpen, pageOpen } = useContext(AppContext);
 
   return (
     <section className="hidden md:block h-2/3 bg-secondary/95 w-1/3 space-y-2 rounded-tl-2xl rounded-bl-2xl">

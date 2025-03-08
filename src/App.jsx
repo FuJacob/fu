@@ -1,5 +1,3 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import { useState, createContext } from "react";
 import Main from "./components/MessageStuff/Main";
 import Sidebar from "./components/SidebarStuff/Sidebar";
