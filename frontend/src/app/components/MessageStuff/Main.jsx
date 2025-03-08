@@ -12,6 +12,7 @@ import { AppContext } from "../SidebarStuff/AppContext";
 import ContactMessages from "./Contact/ContactMessages";
 import { FaArrowLeft } from "react-icons/fa6";
 import SidebarMobile from "../SidebarStuff/SidebarMobile";
+import {motion} from "framer-motion";
 // Removed: import { getAIResponse } from "../../../utils/openai";
 
 const Main = () => {
@@ -144,11 +145,17 @@ const Main = () => {
           )
         )}
         {isLoading && (
-          <div className="flex items-center justify-center bg-secondary w-12 py-1 rounded-3xl items-center gap-1 text-gray-400 text-2xl">
-            <div className="animate-bounce">•</div>
-            <div className="animate-bounce delay-100">•</div>
-            <div className="animate-bounce delay-200">•</div>
-          </div>
+          <motion.div
+            initial={{ scale: 0.5, opacity: 0, y: 10 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            transition={{ type: "spring", stiffness: 150, damping: 15 }}
+          >
+            <div className="flex items-center justify-center bg-secondary w-12 py-1 rounded-3xl items-center gap-1 text-gray-400 text-2xl">
+              <div className="animate-bounce">•</div>
+              <div className="animate-bounce delay-100">•</div>
+              <div className="animate-bounce delay-200">•</div>
+            </div>
+          </motion.div>
         )}
         <div ref={messagesEndRef} />
       </div>
