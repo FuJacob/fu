@@ -14,7 +14,7 @@ function App() {
           }}
         >
           <main className="flex md:w-1/2 flex-row md:h-full h-screen shadow-2xl">
-              <Sidebar />
+            <Sidebar />
 
             <Main />
           </main>
