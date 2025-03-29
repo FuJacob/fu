@@ -3,9 +3,15 @@ import BlueMessage from "../BlueMessage";
 import projects from "../../../data/portfolio.js"; // Import your projects array
 
 const ProjectsMessages = () => {
+  let counter = 1;
+  const timeGap = 2;
+
   return (
     <>
-      <GrayMessage message="Here are some of the projects I've worked on!" />
+      <GrayMessage
+        message="Here are some of the projects I've worked on!"
+        order={(counter += timeGap)}
+      />
       {projects.map((project, index) => (
         <>
           {/* Project Image */}
@@ -16,7 +22,7 @@ const ProjectsMessages = () => {
             className="text-blue-500 hover:underline"
           >
             {" "}
-            <GrayMessage key={index} className="">
+            <GrayMessage key={index} order={(counter += timeGap)} >
               <img
                 src={project.imgUrl}
                 alt={project.title}
@@ -27,7 +33,7 @@ const ProjectsMessages = () => {
           </a>
 
           {/* Project Description */}
-          <GrayMessage>
+          <GrayMessage order={(counter += timeGap)}>
             <p>
               <strong>{project.title}</strong>: {project.des}{" "}
             </p>

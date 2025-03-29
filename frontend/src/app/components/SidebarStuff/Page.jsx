@@ -6,11 +6,14 @@ import {
   FaPaperPlane,
   FaEnvelope,
 } from "react-icons/fa";
+
+const currDate = new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', hour12: false});
 const Page = ({
   title = "Home",
   tagline = "Welcome and quick introduction",
   type = "home",
 }) => {
+
   return (
     <div className="flex flex-row p-3 hover:bg-iblue text-txt transition-all duration-400 hover:text-txtlight rounded-xl">
       <div className="w-1/5 mr-2">
@@ -33,7 +36,7 @@ const Page = ({
 
       <div className="flex flex-col w-4/5 h-16 gap-1">
         <div className="flex w-full justify-between text-sm">
-          <h1 className="font-bold text-white">{title}</h1> <h2>21:56</h2>
+          <h1 className="font-bold text-white">{title}</h1> <h2>{currDate}</h2>
         </div>
         <p className="text-start text-xs">{tagline}</p>
       </div>

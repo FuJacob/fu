@@ -46,11 +46,12 @@ const Pinned = () => {
         {/* Resume */}
         <div className="flex flex-col gap-2 items-center">
           <a
-            href="/Jacob_Fu_resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-center items-center bg-iblue w-16 h-16 p-2 rounded-full 
-            transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-6 hover:bg-iblue"
+            href="#"
+
+            // target="_blank"
+            // rel="noopener noreferrer"
+            className="flex justify-center items-center bg-gray-500 w-16 h-16 p-2 rounded-full 
+            transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-6"
           >
             <FaBriefcase size={40} color="white" />
           </a>
