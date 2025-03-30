@@ -1,4 +1,4 @@
-import { Inter as Open_Sans } from "next/font/google";
+import { Nunito as Open_Sans } from "next/font/google";
 import "./globals.css";
 
 const openSans = Open_Sans({

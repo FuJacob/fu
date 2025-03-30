@@ -9,7 +9,7 @@ const ProjectsMessages = () => {
   return (
     <>
       <GrayMessage
-        message="Here are some of the projects I've worked on!"
+        message="here's some things i've worked on"
         order={(counter += timeGap)}
       />
       {projects.map((project, index) => (
@@ -26,18 +26,13 @@ const ProjectsMessages = () => {
               <img
                 src={project.imgUrl}
                 alt={project.title}
-                className="object-cover w-96 h-64 rounded-lg shadow-md mt-2 border border-gray-300 hover:scale-105 
+                className="object-cover w-24 h-24 rounded-lg shadow-md border border-gray-300 hover:scale-105 
                 hover:opacity-60 transform transition-transform duration-500"
               />
             </GrayMessage>
           </a>
 
-          {/* Project Description */}
-          <GrayMessage order={(counter += timeGap)}>
-            <p>
-              <strong>{project.title}</strong>: {project.des}{" "}
-            </p>
-          </GrayMessage>
+
         </>
       ))}
     </>

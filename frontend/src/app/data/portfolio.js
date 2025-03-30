@@ -38,27 +38,27 @@ export default [
     link: "https://github.com/FuJacob/melodyVe",
     des: "An AI tool that allows users to discover their musical compatibility.",
   },
-  {
-    title: "AnonAlyze",
-    imgUrl: "portfolio/anonalyze.png", // Replace with actual image path
-    stack: ["JavaScript", "Next.js", "Express.js", "React"],
-    link: "https://github.com/FuJacob/AnonAlyze",
-    des: "An AI tool to analyze a user's social media cyber-security.",
-  },
-  {
-    title: "Robo-Portfolio Advisor",
-    imgUrl: "portfolio/robo.png", // Replace with actual image path
-    stack: ["Python", "Pandas", "NumPy", "yfinance"],
-    link: "https://github.com/FuJacob/RoboInvestmentAdvisor",
-    des: "A robo-advisor that creates market-beating portfolios using historical data.",
-  },
-  {
-    title: "Novel Novels",
-    imgUrl: "portfolio/novelnovels.png", // Replace with actual image path
-    stack: ["JavaScript", "React", "HTML/CSS", "Figma"],
-    link: "https://github.com/FuJacob/NovelNovels",
-    des: "A web-app that transforms classic novels into beautiful picture-books.",
-  },
+  // {
+  //   title: "AnonAlyze",
+  //   imgUrl: "portfolio/anonalyze.png", // Replace with actual image path
+  //   stack: ["JavaScript", "Next.js", "Express.js", "React"],
+  //   link: "https://github.com/FuJacob/AnonAlyze",
+  //   des: "An AI tool to analyze a user's social media cyber-security.",
+  // },
+  // {
+  //   title: "Robo-Portfolio Advisor",
+  //   imgUrl: "portfolio/robo.png", // Replace with actual image path
+  //   stack: ["Python", "Pandas", "NumPy", "yfinance"],
+  //   link: "https://github.com/FuJacob/RoboInvestmentAdvisor",
+  //   des: "A robo-advisor that creates market-beating portfolios using historical data.",
+  // },
+  // {
+  //   title: "Novel Novels",
+  //   imgUrl: "portfolio/novelnovels.png", // Replace with actual image path
+  //   stack: ["JavaScript", "React", "HTML/CSS", "Figma"],
+  //   link: "https://github.com/FuJacob/NovelNovels",
+  //   des: "A web-app that transforms classic novels into beautiful picture-books.",
+  // },
   {
     title: "Metro Apocalypse",
     imgUrl: "portfolio/metroapocalypse.png", // Replace with actual image path
