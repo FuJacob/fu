@@ -11,6 +11,7 @@ const Experience = ({ exp }) => {
       ))}
 
       <BlueMessage message={exp.outro} />
+      <GrayMessage message="TODO: FIX THIS THIS SECTION IS NOT DONE" />
     </>
   );
 };
