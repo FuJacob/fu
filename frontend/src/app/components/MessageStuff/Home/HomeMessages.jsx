@@ -45,7 +45,7 @@ const HomeMessages = () => {
           className="text-iblue underline"
         >
           LinkedIn
-        </a> {" "}
+        </a>{" "}
         and{" "}
         <a
           href="https://github.com/FuJacob"
@@ -57,6 +57,7 @@ const HomeMessages = () => {
         </a>
       </GrayMessage>
       <GrayMessage
+        bg="[#ff5c34]"
         message="if you ever want to talk, just send me a message through the message bar 😉"
         order={(counter += timeGap)}
       />
