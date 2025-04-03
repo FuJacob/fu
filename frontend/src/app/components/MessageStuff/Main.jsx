@@ -108,7 +108,7 @@ const Main = () => {
   };
 
   return (
-    <section className="w-full md:w-2/3 flex flex-col h-full md:h-auto md:rounded-tr-2xl rounded-br-2xl">
+    <section className="w-full md:w-2/3 flex flex-col h-full md:h-auto md:rounded-tr-2xl md:rounded-br-2xl">
       <div className="fixed relative top-0 right-0 bg-secondary/95 md:rounded-tr-2xl p-4">
         <div className="flex w-full items-center gap-2 text-txt text-sm">
           <div className="md:hidden flex w-full justify-center items-center">

@@ -15,7 +15,7 @@ const MessageBar = ({ onSendMessage }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-primary relative right-0 bottom-0 z-50 flex gap-4 w-full h-12 p-6 justify-center items-center rounded-br-2xl"
+      className="bg-primary relative right-0 bottom-0 z-50 flex gap-4 w-full h-12 p-6 justify-center items-center md:rounded-br-2xl"
     >
       <button
         type="button"

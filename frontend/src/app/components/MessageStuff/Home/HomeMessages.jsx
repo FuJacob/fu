@@ -15,7 +15,7 @@ const HomeMessages = () => {
       <GrayMessage order={(counter += timeGap)}>
         <div className="overflow-hidden">
           <img
-            src="avatar4.JPG"
+            src="avatar4.jpg"
             className="w-56 h-56 rounded-3xl object-[100%_50%] object-cover"
           />
         </div>
