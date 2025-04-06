@@ -215,7 +215,9 @@ const ExperiencesMessages = () => {
           delay: 0.2 * counter,
         }}
       >
-        <h3 className="text-xs text-txt text-center">Incoming Summer 2025 at Cambridge, MA!</h3>
+        <h3 className="text-xs text-txt text-center">
+          Incoming Summer 2025 at Cambridge, MA!
+        </h3>
       </motion.div>
       <GrayMessage
         bg="[#ff5c34]"
